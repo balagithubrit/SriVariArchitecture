@@ -100,15 +100,19 @@ a {
   .nav__item:nth-child(1) {
     transition-delay: 0.1s;
   }
+
   .nav__item:nth-child(2) {
     transition-delay: 0.2s;
   }
+
   .nav__item:nth-child(3) {
     transition-delay: 0.3s;
   }
+
   .nav__item:nth-child(4) {
     transition-delay: 0.4s;
   }
+
   .nav__item:nth-child(5) {
     transition-delay: 0.5s;
   }
@@ -261,16 +265,14 @@ main {
 
 
 .heading {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.86) 0%,
-      rgba(0, 0, 0, 0.86) 100%
-    ),
+      rgba(0, 0, 0, 0.86) 100%),
     url("../img/logo.png");
-    background-position:center;
-    background-size: cover;
-    padding: 6vw 2vw 8vw 2vw;
-    margin: var(--header-height) 0 0 0;
+  background-position: center;
+  background-size: cover;
+  padding: 6vw 2vw 8vw 2vw;
+  margin: var(--header-height) 0 0 0;
 }
 
 
@@ -283,30 +285,40 @@ main {
   font-size: 1.8rem;
 }
 
-.heading button{
+.heading button {
   border: 0;
   padding: 1rem 4rem;
-  color:white;
+  color: white;
   font-weight: 900;
   background-color: rgb(92, 92, 92);
 }
 
-.heading button:hover{
- cursor: pointer;
+.heading button:hover {
+  cursor: pointer;
+}
+
+
+#philosophy {
+  width:47.5%
+}
+
+#mission{
+  width: 47.5%;
 }
 
 
 .philosophy-mission {
   display: flex;
   flex-direction: row;
-  margin:0 1rem 0 1rem
+  margin: 0 2rem 0 2rem
 }
 
-.philosophy-mission h4{
+.philosophy-mission h4 {
   margin: 2rem;
   font-weight: 500;
 }
-.philosophy-mission p{
+
+.philosophy-mission p {
   color: rgb(92, 92, 92);
 }
 
@@ -323,11 +335,11 @@ main {
 /* --------------- */
 
 
-.video-container{
-  margin:0 100px 50px 100px;
+.video-container {
+  margin: 0 100px 50px 100px;
 }
 
-.video-item{
+.video-item {
   width: 47.5%;
   height: 250px;
   display: flex;
@@ -335,13 +347,14 @@ main {
   align-items: center;
 }
 
-.video-item-L{
-  float:left
+.video-item-L {
+  float: left
 }
 
-.video-item-R{
-  float:right
+.video-item-R {
+  float: right
 }
+
 .content-heading {
   display: flex;
   justify-content: center;
@@ -353,17 +366,20 @@ main {
   padding: 0 20px;
 }
 
-.seperator{
-  width:5%;
+.seperator {
+  width: 5%;
   float: left;
   background-color: black;
 }
+
 .video-content {
   float: none
 }
-.seperator-h{
+
+.seperator-h {
   /* height:1px */
 }
+
 
 
 
@@ -371,37 +387,44 @@ main {
   .heading {
     padding: 6rem 1.5rem 6rem 1.5rem;
   }
+
   .heading h1 {
-    font-size: 2.4rem ;
+    font-size: 2.4rem;
   }
-  
+
   .heading p {
-    font-size: 1.7rem ;
-    margin: 1.3rem 0 1.3rem 0 ;
+    font-size: 1.7rem;
+    margin: 1.3rem 0 1.3rem 0;
   }
-  
-  .heading button{
-    font-size: 1rem ;
+
+  .heading button {
+    font-size: 1rem;
     font-weight: 700;
     width: 100%;
   }
-  .philosophy-mission{
-    margin:0 1.9rem 0 1.9rem;
+
+  .philosophy-mission {
+    margin: 0 1.9rem 0 1.9rem;
     flex-direction: column;
   }
-  .video-container{
-    margin:1rem;
-    height:30vh
+
+  .video-container {
+    margin: 1rem;
+    height: 30vh
   }
-  .video-item, .seperator
-  {
-    float:none;
+
+  .video-item,
+  .seperator {
+    float: none;
     width: 100%;
     height: auto;
   }
-  .video-item-R, .video-item-L{
-    height:80%
+
+  .video-item-R,
+  .video-item-L {
+    height: 80%
   }
+
   .content {
     display: flex;
     justify-content: center;
@@ -411,6 +434,19 @@ main {
     font-size: 1rem;
     padding: 1.2rem;
   }
+
+
+  .philosophy-mission {
+    flex-direction: column;
+    margin: 0 1rem 0 1rem
+  }
+  #mission {
+    width: 100%;
+  }
+
+  #philosophy {
+    width: 100%;
+  }
 }
 
 
@@ -419,34 +455,49 @@ main {
   .heading {
     padding: 6rem 1.5rem 6rem 1.5rem;
   }
+
   .heading h1 {
-    font-size: 2.6rem ;
+    font-size: 2.6rem;
   }
-  
+
   .heading p {
-    font-size: 1.7rem ;
-    margin: 1.3rem 0 1.3rem 0 ;
+    font-size: 1.7rem;
+    margin: 1.3rem 0 1.3rem 0;
   }
-  
-  .heading button{
-    font-size: 0.8rem ;
+
+  .heading button {
+    font-size: 0.8rem;
   }
-  .philosophy-mission{
-    margin:0 1rem 0 1rem
-  }
+
+
 }
 
 @media only screen and (min-width: 992px) {
   .heading h1 {
-    font-size: 4rem ;
+    font-size: 4rem;
   }
-  
+
   .heading p {
     font-size: 1.8rem;
     margin: 20px 0 20px 0;
   }
-  
-  .heading button{
+
+  .heading button {
     font-size: 1rem;
   }
+
+  .philosophy-mission {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 0 2rem
+  }
+
+  .philosophy-mission > #seperator { 
+    width: 1%;
+  }
 }
+
+
+
