@@ -379,6 +379,111 @@ main {
 .seperator-h {
   /* height:1px */
 }
+/* slider */
+
+* {box-sizing: border-box}
+.slideshow-container {font-family: Verdana, sans-serif;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  position: relative;
+}
+.mySlides {
+  position: relative; 
+  width: 100%; 
+  height: 65vh; 
+}
+.mySlides > img {
+  /* max-height: 50vh; */
+  max-width: 100%; /* Ensures image does not exceed parent container's width */
+  max-height: 100%; /* Ensures image does not exceed parent container's height */
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left:0;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(255,0,0,0.8)
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: red;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.dot-container{
+  display: flex;
+  justify-content: center;
+}
 
 
 
@@ -447,6 +552,30 @@ main {
   #philosophy {
     width: 100%;
   }
+
+  .prev, .next,.text {font-size: 11px}
+  .slideshow-container {
+    position: relative; 
+    width: 80%; 
+    height: 38vh; 
+    background-color: rgb(92,92,92,0.4);
+  }
+  .mySlides {
+    height:100%
+  }
+  .dot{
+    display: none;
+  }
+  .mySlides > img {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left:0;
+  }
+  .text{
+    bottom:0  
+  }
 }
 
 
@@ -490,7 +619,6 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin: 0 2rem 0 2rem
   }
 
@@ -498,6 +626,3 @@ main {
     width: 1%;
   }
 }
-
-
-
