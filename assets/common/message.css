@@ -1,0 +1,100 @@
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#message-container {
+  display: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50%;
+  position: fixed;
+  right: 14px;
+  bottom: 17px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  position: relative;
+  top: -12px;
+  display: block;
+}
+
+.required {
+  color: red !important;
+}
+
+.submitting {
+  color: #04aa6d;
+  font-size: 12px;
+  position: relative;
+  top: -12px;
+  display: none;
+}
+
+.success {
+  color: green;
+  font-size: 12px;
+  position: relative;
+  top: -12px;
+  display: none;
+}
+
+.failure {
+  color: red;
+  font-size: 12px;
+  position: relative;
+  top: -12px;
+  display: none;
+}
+
+#message-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  background: white;
+  color: black;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  #message-icon {
+    right: 20px;
+    bottom: 50px;
+  }
+  #message-container {
+    bottom: 36px !important;
+    width: 70% !important;
+  }
+}

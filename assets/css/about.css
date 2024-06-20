@@ -1,0 +1,48 @@
+main {
+  margin: 2rem;
+}
+
+.about-us-text {
+  color: rgb(145, 145, 145);
+  line-height: 1.5;
+  font-family: "Open Sans", arial, sans-serif;
+  text-align: left;
+}
+
+.brochure-container {
+  background-color: #161616;
+  padding: 1.5rem;
+}
+
+.brochure-para {
+  font-family: "Open Sans", arial, sans-serif;
+}
+
+.brochure-download {
+  display: inline-block;
+  background-color: rgb(42, 42, 42);
+  color: white;
+  padding: 0.6rem 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us-container {
+    text-align: left;
+  }
+
+  .brochure-download {
+    width: 100%;
+  }
+
+  .about-us-img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .about-us-img {
+    height:300px;
+    margin: 1rem 0 2rem 1rem;
+    float: right;
+    display: block;
+  }
+}

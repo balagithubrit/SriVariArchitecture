@@ -1,0 +1,62 @@
+main * {
+  margin: 2rem 15%;
+  text-align: left;
+  font-family: "Open Sans", arial, sans-serif;
+}
+
+.design-package {
+  font-weight: 100;
+  margin-bottom: 0.8rem;
+  color: rgb(145, 145, 145);
+}
+.price-range {
+  margin-top: 0;
+  color: rgb(145, 145, 145);
+}
+
+.package {
+  margin: 2rem 0;
+}
+.package h4 {
+  margin-bottom: 0;
+  font-weight: 100;
+}
+.package p {
+  margin-top: 0.5rem;
+  color: rgb(145, 145, 145);
+}
+.package > .price {
+  margin-top: 0.3rem;
+}
+
+.package-detail {
+  margin: 0 0 -2rem 0;
+}
+
+.package-plan {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.package-plan > * {
+  margin-bottom: 0;
+  font-weight: 100;
+}
+.package-description {
+  margin-top: 0.5rem;
+  color: rgb(145, 145, 145);
+}
+
+#note {
+  color: rgb(145, 145, 145);
+  font-size: 0.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .package-plan {
+    display: flex;
+    flex-direction: column;
+  }
+  .price{
+    margin-top: 0.4rem;
+  }
+}
