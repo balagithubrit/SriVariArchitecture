@@ -46,6 +46,7 @@ India&#39;s Most trusted online design firm"
     <link rel="stylesheet" href="../assets/common/navbar.css" />
     <link rel="stylesheet" href="../assets/common/message.css" />
     <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/contact-us.css" />
   </head>
 
   <body>
@@ -115,9 +116,50 @@ India&#39;s Most trusted online design firm"
         </div>
       </nav>
     </header>
-
+    <br />
+    <br />
     <main>
-        
+      <h2 class="heading-2">Contact Us</h2>
+      <div class="contact-us">
+        <h3>Big actions done by small action.</h3>
+        <p>
+          We'd love to hear from you! Please reach out at your convenience so we
+          can discuss your project.
+        </p>
+        <a href="https://wa.me/919944892713" class="WhatsAppButton">
+          <span class="whatsapp-icon-parent">
+            <i class="ri-whatsapp-line whatsapp-icon"></i>
+            Message us on WhatsApp
+          </span>
+        </a>
+        <h3>Sri vari architectures</h3>
+        <p>
+          #13A, 2nd floor, 1st main 1st cross street, Basavanpura (Ayyappa
+          nagar),K R Puram, Bengaluru, Karnataka - 560036
+        </p>
+        <p>
+          <a href="tel:+919944892713"
+            ><span style="color: rgb(94, 94, 94)">Contact:</span>
+            <span style="color: black">(+91) 99 44 892 713</span></a
+          >
+        </p>
+        <p>
+          <a href="mailto:srivariarchitectures@gmail.com" style="color: black">
+            <span style="color: rgb(94, 94, 94)">Mail id: </span>
+            <span style="color: black">srivariarchitectures@gmail.com</span>
+          </a>
+        </p>
+        <h3>Hours</h3>
+        <div class="hours">
+          <p id="mon">Mon 09:00 am – 08:00 pm</p>
+          <p id="tue">Tue 09:00 am – 08:00 pm</p>
+          <p id="wed">Wed 09:00 am – 08:00 pm</p>
+          <p id="thu">Thu 09:00 am – 08:00 pm</p>
+          <p id="fri">Fri 09:00 am – 08:00 pm</p>
+          <p id="sat">Sat 09:00 am – 08:00 pm</p>
+          <p id="sun">Sun 09:00 am – 08:00 pm</p>
+        </div>
+      </div>
     </main>
     <div id="message-container">
       <form id="myForm" onsubmit="return submitForm()">
@@ -192,5 +234,10 @@ India&#39;s Most trusted online design firm"
 
     <script src="../assets/common/navbar.js"></script>
     <script src="../assets/common/message.js"></script>
+    <script>
+      var today = new Date().getDay();
+      var days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+      document.getElementById(days[today]).classList.add("highlight");
+    </script>
   </body>
 </html>
