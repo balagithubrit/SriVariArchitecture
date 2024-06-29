@@ -104,9 +104,14 @@ footer {
   padding: 0 20px;
 }
 
-.seperator {
+.seperator-L {
   width: 5%;
   float: left;
+  background-color: black;
+}
+.seperator-R {
+  width: 5%;
+  float: right;
   background-color: black;
 }
 
@@ -114,9 +119,7 @@ footer {
   float: none;
 }
 
-.seperator-h {
-  /* height:1px */
-}
+
 /* slider */
 
 * {
