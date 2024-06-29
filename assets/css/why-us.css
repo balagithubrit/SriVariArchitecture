@@ -1,0 +1,30 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: "Open Sans", arial, sans-serif;
+}
+
+#why-us {
+  display: flex;
+}
+
+#why-us > #content > p {
+  text-align: left;
+  margin-top: 0;
+}
+#why-us > #seperator {
+  width: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  #why-us {
+    display: flex;
+    flex-direction: column;
+  }
+  #why-us > #content > p {
+    text-align: left;
+    margin-top: 1rem;
+  }
+}
