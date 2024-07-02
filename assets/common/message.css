@@ -11,17 +11,17 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #04aa6d;
+  background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  /* position: fixed;
+  bottom: 38px; */
 }
 
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
+
 
 #message-container {
   display: none;
@@ -49,26 +49,26 @@ input[type="submit"]:hover {
 }
 
 .submitting {
-  color: #04aa6d;
+  color: black;
   font-size: 12px;
   position: relative;
-  top: -12px;
+  top: 0;
   display: none;
 }
 
 .success {
-  color: green;
+  color: black;
   font-size: 12px;
   position: relative;
-  top: -12px;
+  top: 0;
   display: none;
 }
 
 .failure {
-  color: red;
+  color: black;
   font-size: 12px;
   position: relative;
-  top: -12px;
+  top: 0;
   display: none;
 }
 
@@ -96,5 +96,15 @@ input[type="submit"]:hover {
   #message-container {
     bottom: 36px !important;
     width: 70% !important;
+  }
+  #message-container {
+    height: 100% !important;
+    width: 100% !important;
+    left: 0;
+    top: 67px;
+    overflow-y: scroll;
+  }
+  #myForm{
+    height: 505px;
   }
 }

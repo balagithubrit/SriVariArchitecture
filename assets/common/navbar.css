@@ -61,7 +61,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow:hidden
+  overflow: hidden;
 }
 
 .nav__logo {
@@ -259,4 +259,6 @@ body {
   color: var(--white-color);
 }
 
-
+.nav__menu {
+  overflow-y: auto;
+}

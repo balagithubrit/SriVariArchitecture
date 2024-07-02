@@ -43,6 +43,7 @@ footer {
 
 #philosophy {
   width: 47.5%;
+  margin: 0 3%;
 }
 
 #mission {
@@ -75,6 +76,11 @@ footer {
 
 .video-container {
   margin: 0 100px 50px 100px;
+}
+
+.finished-project-heading-video {
+  height: 60vh !important;
+  padding: 0 100px !important;
 }
 
 .video-item {
@@ -118,7 +124,6 @@ footer {
 .video-content {
   float: none;
 }
-
 
 /* slider */
 
@@ -198,8 +203,8 @@ footer {
 
 .dot {
   cursor: pointer;
-  height: calc(8px + 0.390625vw);
-  width: calc(8px + 0.390625vw);
+  height: calc(3px + 0.390625vw);
+  width: calc(3px + 0.390625vw);
   margin: 0 calc(1px + 0.390625vw);
   background-color: #bbb;
   border-radius: 50%;
@@ -296,7 +301,7 @@ footer {
 
   .heading p {
     font-size: 1.2rem;
-    margin: 1.3rem 0 1.3rem 0;
+    margin: 0.6rem;
   }
   .heading-2 {
     font-size: 1.8rem;
@@ -353,6 +358,7 @@ footer {
   }
   .finished-project-heading-video {
     height: 30vh !important;
+    padding: 0 1rem !important;
   }
   .prev,
   .next,
