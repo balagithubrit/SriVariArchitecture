@@ -44,7 +44,7 @@ main {
     width: 100%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .about-us-img {
     height:300px;
     margin: 1rem 0 2rem 1rem;

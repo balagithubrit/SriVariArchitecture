@@ -63,3 +63,20 @@ main * {
   justify-content: center;
   align-items: center;
 }
+
+@media only screen and (max-height: 500px) {
+  #maps {
+    height: 60vh !important;
+  }
+}
+@media only screen and (max-height: 400px) {
+  #maps {
+    height: 68vh !important;
+  }
+}
+
+@media only screen and (min-height: 1500px) {
+  #maps {
+    height: 25vh !important;
+  }
+}

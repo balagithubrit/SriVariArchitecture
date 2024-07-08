@@ -33,10 +33,7 @@ India&#39;s Most trusted online design firm"
     />
     <meta name="twitter:image" content="../img/logo.png" />
     <meta name="twitter:image:alt" content="Srivariarchitectures" />
-    <meta
-      name="google-site-verification"
-      content="v7L87n2c6kLJK2ha9gD1KXdMfWApkm6_rmmh8Tczuyo"
-    />
+
 
     <link
       rel="stylesheet"
@@ -59,7 +56,7 @@ India&#39;s Most trusted online design firm"
           ><img
             src="../assets/img/header-logo.jpg"
             alt="Sri Vari Architectures Logo"
-            style="width: 131px; height: 74px"
+            style="width: 151px; height: 77px"
           />
         </a>
 
@@ -119,34 +116,47 @@ India&#39;s Most trusted online design firm"
 
     <main>
       <br />
-      <h2 class="heading-2" style="text-align: center;">Why Us?</h2>
+      <h2 class="heading-2" style="text-align: center">Why Us?</h2>
       <div id="why-us">
         <div id="content-img">
-          <img src="../assets/img/why-us.jpg" width="100%"/>
+          <img src="../assets/img/why-us.jpg" width="100%" />
         </div>
         <div id="seperator"></div>
         <div id="content">
-          <p>Fixed amount.</p>
-          <p>We incorporate Vastu as per client needs.</p>
-          <p>
-            No extra charges for modifications or changes while designing in
-            each stage
-          </p>
-          <p>
-            Online live discussion in your flexible time using Zoom, Anydesk,
-            Teamviewer.
-          </p>
-          <p>Deliver the output drawings within the specified time.</p>
-          <p>We have a team of experienced Architects & Engineers.</p>
-          <p>
-            Each stage of work will be carried out until the client's
-            expectations are fulfilled.
-          </p>
+          <ul>
+            <li><p>Fixed amount.</p></li>
+            <li><p>We incorporate Vastu as per client needs.</p></li>
+            <li>
+              <p>
+                No extra charges for modifications or changes while designing in
+                each stage.
+              </p>
+            </li>
+            <li>
+              <p>
+                Online live discussion in your flexible time using Zoom,
+                Anydesk, Teamviewer.
+              </p>
+            </li>
+            <li>
+              <p>Deliver the output drawings within the specified time.</p>
+            </li>
+            <li>
+              <p>We have a team of experienced Architects & Engineers.</p>
+            </li>
+            <li>
+              <p>
+                Each stage of work will be carried out until the client's
+                expectations are fulfilled.
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </main>
-    <div id="message-container">
+    <div id="message-container" style="display: none">
       <form id="myForm" onsubmit="return submitForm()">
+        <p id="successResponse" style="font-weight: 700"></p>
         <label for="name">Name<span class="required">&nbsp;*</span></label>
         <input type="text" id="name" name="firstname" placeholder="Name.." />
         <span id="nameError" class="error"></span>
@@ -166,10 +176,8 @@ India&#39;s Most trusted online design firm"
         ></textarea>
         <span id="messageError" class="error"></span>
 
-        <input type="submit" value="Submit" />
-        <span id="submittingMsg" class="submitting">Submitting...</span>
-        <span id="successMsg" class="success"></span>
-        <span id="failureMsg" class="failure"></span>
+        <input type="submit" value="Send" />
+        <span id="submittingMsg" class="submitting"></span>
       </form>
     </div>
     <div id="message-icon">

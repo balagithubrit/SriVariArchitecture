@@ -1,5 +1,14 @@
+html, body{
+  height: 100%;
+}
+
 main {
   font-family: "Open Sans", arial, sans-serif;
+  min-height: 75%;
+}
+.main:after {
+  content: "";
+  display: block;
 }
 
 .heading {
@@ -9,6 +18,7 @@ main {
       rgba(0, 0, 0, 0.63) 100%
     ),
     url("../../assets/img/career.jpg");
+    padding: 6rem 0;
 }
 
 @media only screen and (max-width: 768px) {

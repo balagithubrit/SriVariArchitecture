@@ -262,3 +262,18 @@ body {
 .nav__menu {
   overflow-y: auto;
 }
+
+@media screen and (min-width:1440px) {
+    .container{
+      max-width: 90% !important;
+    }
+}
+
+a:active{
+  -webkit-tap-highlight-color: transparent;
+}
+span:active{
+  background-color: black;
+  color: white;
+}
+

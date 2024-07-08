@@ -43,7 +43,6 @@ footer {
 
 #philosophy {
   width: 47.5%;
-  margin: 0 3%;
 }
 
 #mission {
@@ -79,13 +78,13 @@ footer {
 }
 
 .finished-project-heading-video {
-  height: 60vh !important;
-  padding: 0 100px !important;
+  height: 60vh;
+  padding: 0 100px;
 }
 
 .video-item {
   width: 47.5%;
-  height: 250px;
+  height: 290px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +142,7 @@ footer {
 .mySlides {
   position: relative;
   width: 100%;
-  height: 38vw;
+  height: 37vw;
 }
 .mySlides > img {
   height: 100%;
@@ -240,7 +239,7 @@ footer {
 
 .google-reviews {
   width: 100%;
-  height: 85vh;
+  height: 33vw;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.86) 0%,
@@ -250,6 +249,7 @@ footer {
   background-position: center;
   background-size: cover;
   padding: 2rem 0;
+  overflow: hidden;
 }
 
 .google-reviews > .heading-2 {
@@ -289,7 +289,7 @@ footer {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 860px) {
   .heading {
     padding: 4rem 1.5rem 4rem 1.5rem;
   }
@@ -310,7 +310,7 @@ footer {
   .heading a {
     font-size: 0.8rem;
     font-weight: 700;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .philosophy-mission {
@@ -357,7 +357,7 @@ footer {
     width: 100%;
   }
   .finished-project-heading-video {
-    height: 30vh !important;
+    height: 25vh !important;
     padding: 0 1rem !important;
   }
   .prev,
@@ -385,7 +385,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .heading {
-    padding: 6rem 1.5rem 6rem 1.5rem;
+    padding: 6rem 1.5rem;
   }
 
   .heading h1 {
@@ -419,7 +419,88 @@ footer {
   .philosophy-mission {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 2rem 0 2rem;
+  }
+}
+
+/* mobile */
+@media only screen and (max-height: 500px) {
+  .video-container,
+  .finished-project-heading-video,
+  .google-reviews {
+    height: 58vh !important;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .video-container,
+  .finished-project-heading-video,
+  .google-reviews {
+    height: 60vh !important;
+  }
+}
+@media only screen and (max-height: 400px) and (min-width: 768px) {
+  .video-container,
+  .finished-project-heading-video,
+  .google-reviews {
+    height: 85vh !important;
+  }
+}
+
+@media only screen and (max-height: 500px) and (min-width: 768px) {
+  .video-container,
+  .finished-project-heading-video,
+  .google-reviews {
+    height: 80vh !important;
+  }
+  .video-container {
+    margin: 1rem;
+    height: 30vh;
+  }
+
+  .video-item,
+  .seperator {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .video-item-R,
+  .video-item-L {
+    height: 80%;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+  .heading {
+    padding: 9rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1580px) {
+  .mySlides {
+    height: 50vw;
+  }
+  .video-item {
+    height: 336px;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .mySlides {
+    height: 40vw;
+  }
+  .heading p {
+    font-size: 2.8rem;
+  }
+  .heading a {
+    font-size: 2rem;
+  }
+  .heading h1 {
+    font-size: 4.5rem;
+  }
+  .video-item {
+    height: 336px;
   }
 }

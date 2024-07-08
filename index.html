@@ -33,10 +33,6 @@ India&#39;s Most trusted online design firm"
     />
     <meta name="twitter:image" content="../img/logo.png" />
     <meta name="twitter:image:alt" content="Srivariarchitectures" />
-    <meta
-      name="google-site-verification"
-      content="v7L87n2c6kLJK2ha9gD1KXdMfWApkm6_rmmh8Tczuyo"
-    />
 
     <link
       rel="stylesheet"
@@ -58,7 +54,7 @@ India&#39;s Most trusted online design firm"
           ><img
             src="./assets/img/header-logo.jpg"
             alt="Sri Vari Architectures Logo"
-            style="width: 131px; height: 74px"
+            style="width: 151px; height: 77px"
           />
         </a>
 
@@ -144,7 +140,6 @@ India&#39;s Most trusted online design firm"
             protecting the environment.
           </p>
         </div>
-        <div id="seperator"></div>
         <div id="mission">
           <h4>Our Mission</h4>
           <p>
@@ -543,17 +538,24 @@ India&#39;s Most trusted online design firm"
       <section class="google-reviews">
         <h2 class="heading-2">Reviews</h2>
         <div id="reviews-widget">
-          <div class="sk-ww-google-reviews" data-embed-id="25424998"></div>
+          <div class="sk-ww-google-reviews" data-embed-id="25434732"></div>
           <script
             src="https://widgets.sociablekit.com/google-reviews/widget.js"
             async
             defer
           ></script>
+          <!-- <div class="sk-ww-google-reviews" data-embed-id="25424998"></div>
+          <script
+            src="https://widgets.sociablekit.com/google-reviews/widget.js"
+            async
+            defer
+          ></script> -->
         </div>
       </section>
     </main>
-    <div id="message-container">
+    <div id="message-container" style="display: none">
       <form id="myForm" onsubmit="return submitForm()">
+        <p id="successResponse" style="font-weight: 700"></p>
         <label for="name">Name<span class="required">&nbsp;*</span></label>
         <input type="text" id="name" name="firstname" placeholder="Name.." />
         <span id="nameError" class="error"></span>
@@ -573,10 +575,8 @@ India&#39;s Most trusted online design firm"
         ></textarea>
         <span id="messageError" class="error"></span>
 
-        <input type="submit" value="Submit" />
-        <span id="submittingMsg" class="submitting">Submitting...</span>
-        <span id="successMsg" class="success"></span>
-        <span id="failureMsg" class="failure"></span>
+        <input type="submit" value="Send" />
+        <span id="submittingMsg" class="submitting"></span>
       </form>
     </div>
     <div id="message-icon">
