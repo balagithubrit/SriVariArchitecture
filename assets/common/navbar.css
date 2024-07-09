@@ -263,17 +263,44 @@ body {
   overflow-y: auto;
 }
 
-@media screen and (min-width:1440px) {
-    .container{
-      max-width: 90% !important;
-    }
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 90% !important;
+  }
 }
 
-a:active{
+a:active {
   -webkit-tap-highlight-color: transparent;
 }
-span:active{
+span:active {
   background-color: black;
   color: white;
 }
 
+
+
+html, body{
+  height: 100%;
+}
+
+main {
+  font-family: "Open Sans", arial, sans-serif;
+  min-height: 85%;
+}
+.main:after {
+  content: "";
+  display: block;
+}
+
+footer > p {
+  font-size: 1.2rem;
+}
+
+.footer_link {
+  color: white;
+}
+
+.for_design > a{
+  color: rgb(92, 92, 92);
+  
+}
