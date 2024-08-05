@@ -1,4 +1,4 @@
-let slideIndex = 1;
+let slideIndex = 0;
 let time = 6000;
 let timeoutOnAuto = 0;
 let timeoutOnManual = 0;
